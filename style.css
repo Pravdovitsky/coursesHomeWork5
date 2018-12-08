@@ -1,0 +1,132 @@
+html, body {
+    min-height: 100%;
+    margin: auto;
+    background-color: #606060;
+    padding: 0;
+    display: flex;
+}
+
+.content {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.popup {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    right: 0;
+    left: 50%;
+    z-index: 20;
+    margin: 0;
+    width: 80%;
+    height: 80%;
+    min-width: 320px;
+    max-width: 1200px;
+    position: fixed;
+    padding: 15px;
+    border: 1px solid #383838;
+    background: #fefefe;
+    border-radius: 4px;
+    font: 14px/18px 'Tahoma', Arial, sans-serif;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, .22), 0 19px 60px rgba(0, 0, 0, .3);
+    transition: transform 0.6s ease-out;
+    color: black;
+    transform: translate(-50%, 0);
+    top: 5%;
+}
+
+.close {
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    padding: 0;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    background-color: rgba(61, 61, 61, 0.8);
+    box-shadow: 0px 0px 10px #000;
+    text-align: center;
+    text-decoration: none;
+    font: 13px/20px 'Tahoma', Arial, sans-serif;
+    font-weight: bold;
+    transition: all ease .8s;
+}
+
+.close:before {
+    color: rgba(255, 255, 255, 0.9);
+    content: "X";
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+    font-size: 12px;
+}
+
+.close:hover {
+    background-color: rgba(252, 20, 0, 0.8);
+}
+
+.galeryBody {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.header {
+    background-color: rgb(3, 76, 57);
+    height: 150px;
+    display: flex;
+    width: 100%;
+}
+
+.header span {
+    padding-left: 40px;
+    color: white;
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    background-color: rgb(3, 76, 57);
+    height: 150px;
+    width: 100%;
+}
+
+.mainImg {
+    padding: 10px;
+    width: 320px;
+    height: 200px;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+.pagingToolbar {
+    margin: 20px 0;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#counter {
+    font-size: 25px;
+}

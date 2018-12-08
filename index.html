@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div id="modal" class="popup">
+    <img height="100%" width="100%" id="modalImg" src="">
+    <div class="pagingToolbar">
+        <a onclick="prevImg()"><img src="img/arr-left.png" class="icon"></a>
+        <span id="counter"></span>
+        <a onclick="nextImg()"><img src="img/arr-right.png" class="icon"></a>
+
+    </div>
+    <a class="close" onclick="hideModal()" title="Закрыть"></a>
+</div>
+
+<div id="loader" class="loader"></div>
+
+<div id="content" class="content">
+    <div class="header">
+        <span>Галерея</span>
+    </div>
+    <div id="galery" class="galeryBody"></div>
+    <div class="footer">
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
